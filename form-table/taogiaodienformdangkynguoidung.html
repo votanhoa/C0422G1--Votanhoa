@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>tạo giao diện fom đăng ký người dùng</title>
+    <style>
+        h3{
+            border:1px;
+                 : 0px;
+        }
+    </style>
 </head>
 <body>
-<p> Họ Và Tên</p>
-<input type="text" size="15">
-<p>Email</p>
-<input type="text" size="15">
-<p>phone</p>
-<input type="text"size="15">
-<p>gender</p>
-<input type="radio" name="gd"> male
-<input type="radio" name="gd"> fomale
-<p><input type="button" name="đăng ký" value="đăng ký"></p>
+<form action="http://demo.codegym.vn/6/registration_form/register.php" method="post">
+    <h3> HỌ Và Tên:</h3>
+    <input type="text" name="name">
 
+    <h3>Email:</h3>
+    <input type="text" name="email">
 
+    <h3>Phone:</h3>
+    <input type="text"name="Số Điện thoại">
+
+    <h3>gader:</h3>
+    <input type="radio" name="gd" value="male" checked/>nam
+    <input type="radio" name="gd"value="fomale"/> nữ<br><br>
+    <input type="button" name="đăng ký" value="đăng ký"/>
+
+</form>
 </body>
 </html>
