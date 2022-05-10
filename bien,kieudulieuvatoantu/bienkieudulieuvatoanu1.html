@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>biến kiểu dữ liệu và toán tử</title>
+</head>
+<body>
+<body>
+<script>
+    var hoa=prompt("nhập điểm hóa");
+    var ly=prompt("nhập điểm lý");
+    var sinh=prompt("nhập điểm sinh");
+    console.log(hoa);
+    var dtb=(parseInt(hoa)+parseInt(ly)+parseInt(sinh))/3;
+    document.write("điểm trung bình là: " +dtb);
+    document.write("Tổng là: " +(parseInt(hoa)+parseInt(ly)+parseInt(sinh)));
+</script>
+
+
+<script>
+    var doC=prompt("nhập độ C");
+    var doF;
+    doF=(parseInt(doC)/5*9)+32;
+    document.write("độ c là: " +doC + " thì ");
+    document.write("độ F là: " +doF);
+</script>
+
+
+<script>
+    var chieudaihinhchunhat=prompt("nhập chiều dài hình chử nhật");
+    var chieuronghinhchunhat=prompt("nhập chiều rộng hình chử nhật");
+
+    var dientichhinhchunhat=(parseInt(chieudaihinhchunhat)*parseInt(chieuronghinhchunhat));
+    document.write("dientichhinhchunhat là:" + dientichhinhchunhat);
+</script>
+
+
+
+<script>
+    var dk=prompt("nhập đường kính hình tròn");
+    var chuvi=parseInt(dk)*Math.PI;
+    document.write("chu vi là"+ chuvi);
+</script>
+
+</body>
+</html>

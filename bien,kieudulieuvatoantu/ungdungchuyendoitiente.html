@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Amount</td>
+        <td>From currency</td>
+        <td>to currency</td>
+
+    </tr>
+    <tr>
+        <td><input type="number" id="nhapsotien"></td>
+        <td><select id="o1">
+            <option value="vnd"id="vnd1">Việt Nam</option>
+            <option value="USD"id="usd1"> USD</option>
+        </select></td>
+        <td><select id="o2">
+            <option value="vnd"id="vnd1">Việt Nam</option>
+            <option value="USD"id="usd1"> USD</option>
+        </select></td>
+        <td>
+            <button onclick="chuyendoitien()" type="button">convert</button>
+        </td>
+
+
+    </tr>
+</table>
+<p> result <span id ="ketqua"> 0</span></p>
+<script>
+function chuyendoitien() {
+    var a=document.getElementById('nhapsotien').value;
+    var b=document.getElementById("o1").value;
+    var c=document.getElementById("o2").value;
+    if (c=="vnd" && b == 'vnd'){
+        document.getElementById("ketqua").innerHTML = a +" vnd";
+    }
+    if (b=="vnd" && c=="USD"){
+        document.getElementById("ketqua").innerHTML= parseInt(a)/23000 + "USD";
+    }
+    if (b=="USD"&& c=="USD"){
+        document.getElementById("ketqua").innerHTML=a + "USD";
+    }
+    if (b=="USD" && c=="vnd"){
+        document.getElementById("ketqua").innerHTML=parseInt(a)*23000 +"vnd";
+    }
+}
+
+</script>
+
+</body>
+</html>

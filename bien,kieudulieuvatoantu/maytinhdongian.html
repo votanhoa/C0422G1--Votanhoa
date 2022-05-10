@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tạo máy tính đơn giản</title>
+</head>
+<body>
+<input type="number" id="sothu1">
+<input type="number" id="sothu2"><br>
+
+<button type="button" onclick="cong()">addition(+)</button>
+<button type="button" onclick="tru()">subtraction(-)</button>
+<button type="button" onclick="nhan()">mutiplication(*)</button>
+<button type="button" onclick="chia()">division(/)</button>
+<p>resule <span id="ketqua">0</p>
+<script>
+    function cong() {
+    var a=document.getElementById("sothu1").value;
+    var b=document.getElementById("sothu2").value;
+    document.getElementById("ketqua").innerHTML =parseInt(a)+ parseInt(b);
+    }
+    function tru() {
+        var a=document.getElementById("sothu1").value;
+        var b=document.getElementById("sothu2").value;
+        document.getElementById("ketqua").innerHTML =parseInt(a)- parseInt(b);
+    }
+    function nhan() {
+        var a=document.getElementById("sothu1").value;
+        var b=document.getElementById("sothu2").value;
+        document.getElementById("ketqua").innerHTML =parseInt(a)* parseInt(b);
+    }
+    function chia() {
+        var a=document.getElementById("sothu1").value;
+        var b=document.getElementById("sothu2").value;
+        document.getElementById("ketqua").innerHTML =parseInt(a)/ parseInt(b);
+    }
+</script>
+</body>
+</html>
